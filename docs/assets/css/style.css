@@ -1,0 +1,10 @@
+/*SLIDER*/
+#mainSlider .carousel-item {
+    height: 400px;
+    background-color: gray;
+}  
+
+#mainSlider img {
+    height: inherit;
+} 
+

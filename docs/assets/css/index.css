@@ -1,0 +1,38 @@
+/*SLIDER*/
+#mainSlider .carousel-item {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #408fc7;
+}  
+
+#mainSlider img {
+    height: 400px;
+} 
+
+/*BRAND BANNERS*/
+#brandsDiv figure {
+    background-color: #408fc7;
+    border-radius: 25px;
+    border:5px solid #0761a0;
+}
+
+#brandsDiv img {
+    height: 200px;
+}
+
+#brandsDiv figcaption{
+    color: #0761a0;
+    font-size: medium;
+    width: auto;
+    text-align: justify;
+}
+
+/*MESSAGE TO VISITOR*/
+#msgToVisitor{
+    background-color: #408fc7;
+    border-radius: 8px;
+}
+
+#msgToVisitor a{
+    color: #0761a0;
+}

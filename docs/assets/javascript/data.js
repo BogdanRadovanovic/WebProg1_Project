@@ -13,3 +13,7 @@ var devices = [
 	["Huawei", "P30 Pro New Edition", "https://fdn2.gsmarena.com/vv/pics/huawei/huawei-p30-pro-new-edition-2.jpg", "32"],
 	["Huawei", "Mate Xs", "https://fdn2.gsmarena.com/vv/pics/huawei/huawei-mate-xs-4.jpg", "33"]
 ];
+
+var ageRanges = new Array ("Under 18", "18-29", "30-49", "50-69", "70+"); 
+
+var monthNames = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");

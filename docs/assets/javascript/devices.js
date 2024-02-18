@@ -55,24 +55,31 @@ function returnDeviceCard (name, imgSrc) {
     let columnElement = document.createElement("div");
     columnElement.classList.add("col");
 
-    let cardElement = document.createElement("div");
-    cardElement.classList.add("card", "h-100", "p-2");
+        let cardElement = document.createElement("div");
+        cardElement.classList.add("card", "h-100", "p-2");
 
-    let imgElement = document.createElement("img");
-    imgElement.classList.add("card-img-top");
-    imgElement.setAttribute("src", imgSrc);
-    imgElement.setAttribute("alt", name);
+            let galleryLink = document.createElement("a");
+            galleryLink.setAttribute("href", imgSrc);
+            galleryLink.setAttribute("data-lightbox", "devicesGallery");
+            galleryLink.setAttribute("data-title", name);
+            galleryLink.setAttribute("data-alt", name);
 
-    let cardBodyElement = document.createElement("div");
-    cardBodyElement.classList.add("card-body", "d-flex");
+                let imgElement = document.createElement("img");
+                imgElement.classList.add("card-img-top");
+                imgElement.setAttribute("src", imgSrc);
+                imgElement.setAttribute("alt", name);
 
-    let deviceTitleElement = document.createElement("h5");
-    deviceTitleElement.classList.add("card-title", "align-self-end", "m-0", "p-3");
-    let deviceTitle = document.createTextNode(name);
+            let cardBodyElement = document.createElement("div");
+            cardBodyElement.classList.add("card-body", "d-flex");
+
+                let deviceTitleElement = document.createElement("h5");
+                deviceTitleElement.classList.add("card-title", "align-self-end", "m-0", "p-3");
+                let deviceTitle = document.createTextNode(name);
 
     deviceTitleElement.appendChild(deviceTitle); 
     cardBodyElement.appendChild(deviceTitleElement);
-    cardElement.appendChild(imgElement);
+    galleryLink.appendChild(imgElement)
+    cardElement.appendChild(galleryLink);
     cardElement.appendChild(cardBodyElement);
     columnElement.appendChild(cardElement);
 

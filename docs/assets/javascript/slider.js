@@ -1,44 +1,60 @@
-function createSlider(devices, brands) {
+function createSlider(devices, brands) 
+{
     let brandIndex = 0;
-    for (let device of devices) {
-        if(brands.length > brandIndex && device[0] == brands[brandIndex]){
-            let slide = document.createElement("div");
-            slide.classList.add("carousel-item");
-            slide.innerHTML = `<a href="#">
-                                    <img src="${device[2]}" class="d-block mx-auto" alt="${device[0].trim()} ${device[1].trim()}">
-                                </a>`;
-            document.querySelector("#mainSlider > .carousel-inner").appendChild(slide);
+    for (let device of devices) 
+    {
+        if(brands.length > brandIndex && device[0] == brands[brandIndex])
+        {
+            let carouselInner = document.querySelector("#mainSlider > .carousel-inner"); 
+            if(carouselInner != null)
+            {
+                let slide = document.createElement("div");
+                slide.classList.add("carousel-item");
+                slide.innerHTML = `<a href="devices.html#${device[0]}">
+                                        <img src="${device[2]}" class="d-block mx-auto" alt="${device[0].trim()} ${device[1].trim()}">
+                                    </a>`;
+                carouselInner.appendChild(slide);
 
-            brandIndex++;
+                brandIndex++;
+            }
         }
     }
-    document.querySelector("#mainSlider .carousel-item").classList.add("active");
+    let carouselItem = document.querySelector("#mainSlider .carousel-item");
+    if(carouselItem != null)
+    {
+        carouselItem.classList.add("active");
+    }
 }
 
-function showNextSlide() {
+function showNextSlide() 
+{
     let currentSlide = $('#mainSlider .active');
     let nextSlide;
 
-    if(currentSlide.next().length){
+    if(currentSlide.next().length)
+    {
         nextSlide = currentSlide.next();
     }
-    else{
+    else
+    {
         nextSlide = currentSlide.parent().children(':first');
     }
 
     currentSlide.removeClass('active');
     nextSlide.addClass('active');
-    
 }
 
-function showPreviousSlide() {
+function showPreviousSlide() 
+{
     let currentSlide = $('#mainSlider .active');
     let previousSlide;
 
-    if(currentSlide.prev().length){
+    if(currentSlide.prev().length)
+    {
         previousSlide = currentSlide.prev();
     }
-    else{
+    else
+    {
         previousSlide = currentSlide.parent().children(':last');
     }
 
@@ -46,13 +62,14 @@ function showPreviousSlide() {
     previousSlide.addClass('active');
 }
 
-function restartTimer() {
+function restartTimer() 
+{
     clearInterval(window.sliderTimer);
     window.sliderTimer = setInterval(showNextSlide, 3000); 
 }
 
-window.addEventListener("load", function () { 
-
+window.addEventListener("load", function () 
+{ 
     createSlider(devices, brands); 
 
     this.sliderTimer = setInterval(showNextSlide, 3000); 

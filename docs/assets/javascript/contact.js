@@ -111,7 +111,6 @@ function validateForm()
 
 		if (message == "") 
 		{
-			alert("You haven't written us no message. Write what you want and resend."); 
 			taNote.classList.add("border-2", "border-danger"); 
 			taNote.labels.forEach(label => 
 			{
@@ -289,7 +288,6 @@ function validateForm()
 			//Final check
 			if (invalidInputs == 0) 
 			{
-				alert("You have successfully submitted your message! \nCheck the message and your info, below the form."); 
 				printData(validData); 
 				return false;
 			}

@@ -30,7 +30,11 @@
 /*MESSAGE TO VISITOR*/
 #msgToVisitor{
     background-color: #408fc7;
-    border-radius: 8px;
+    border-radius: 8px; 
+}
+
+#msgToVisitor p{
+    color: #074571; 
 }
 
 #msgToVisitor a{

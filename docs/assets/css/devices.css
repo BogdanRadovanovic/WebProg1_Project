@@ -31,6 +31,7 @@ main .card-title {
     width: min-content;
     background-color: #408fc7;
     border-color: #074571;
+    font-style: italic;
 }
 
 #filters select, #filters label{

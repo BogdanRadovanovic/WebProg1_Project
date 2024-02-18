@@ -1,0 +1,24 @@
+main {
+    background-color: #408fc7;
+    border-radius: 8px; 
+} 
+
+#author {
+	display: inline-block;
+}
+
+#author img{
+	float: left; 
+    height: 300px; 
+    border-radius: 8px; 
+	margin-right: 20px; 
+}
+
+#author figcaption {
+    color: #074571; 
+    font-size: medium;
+}
+
+#author figcaption a{
+    color: #0761a0; 
+}

@@ -8,8 +8,7 @@
     
     <link rel="stylesheet" type="text/css" href="assets/frameworks/bootstrap-5.3.2-dist/css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/devices.css">
-    <link rel="stylesheet" type="text/css" href="assets/plugins/lightbox2-master/css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/author.css">
 </head>
 <body>
   <div class="container"> 
@@ -76,26 +75,18 @@
 
     </header>
 
-    <main class="container-fluid my-3 py-4">
-      <div id="filters" class="row justify-content-between mx-5 p-2">
-
-        <div id="nameSort" class="col-6">
-          <label for="ddlSort">Sort by: </label>
-          <select class="form-select" id="ddlSort">
-            <option value="0">-- select criteria --</option>
-            <option value="name_asc">Name -> Ascending</option>
-            <option value="name_desc">Name <- Descending</option>
-          </select>
-        </div>
-
-        <div id="brandFilter" class="col-6">
-          <label for="ddlFilter">Choose brand: </label>
-          <select class="form-select" id="ddlFilter">
-            <option value="0" selected>All brands</option>
-          </select>
-        </div>
-
-      </div>
+    <main class="container-fluid my-3 p-4">
+        <figure id="author" class="m-0">
+            <img src="assets/images/profile_picture.jpg" alt="profile_picture">
+            <figcaption>
+                &emsp; My name is Bogdan Radovanović, I was born in Jagodina in 1996. 
+                Graduated from gymnasium "Svetozar Marković" (Informatics major), in my hometown 
+                and at this point, I'm attending <a href="https://ict.edu.rs/" target="_blank">ICT College</a> in Belgrade. 
+                I am currently working at <a href="https://www.traceone.com/" target="_blank">TraceOne</a>, as a Software Developer (Backend, .NET). <br/> 
+                Great enthusiast for a mind burst logical problems, on one side of personality and nature addict, on the other. <br/>
+                My life motto is: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </figcaption>
+        </figure>
     </main>
 
     <footer class="row py-3">
@@ -104,7 +95,7 @@
         <li class="nav-item"><a href="#" class="nav-link px-2">Site Map</a></li>
         <li class="nav-item"><a href="author.html" class="nav-link px-2">About author</a></li>
       </ul>
-      <p class="text-center">&copy; 2024, for Web programming course at <a href="https://ict.edu.rs/" target="_blank">ICT College</a>, by Bogdan Radovanović</p>
+      <p class="text-center">&copy; 2024, for Web programming course at <a href="https://ict.edu.rs/" target="_blank">ICT College</a>, by Bogdan Radovanović</a></p>
     </footer>
 
 	</div>
@@ -112,7 +103,5 @@
     <script type="text/javascript" src="assets/javascript/libs/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="assets/javascript/data.js"></script>
     <script type="text/javascript" src="assets/javascript/navbar.js"></script>
-    <script type="text/javascript" src="assets/javascript/devices.js"></script>
-    <script type="text/javascript" src="assets/plugins/lightbox2-master/js/lightbox.js"></script>
 </body>
 </html>

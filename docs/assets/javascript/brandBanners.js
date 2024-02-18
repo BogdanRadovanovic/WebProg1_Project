@@ -1,5 +1,7 @@
-function createBrandBanners(brands) {
-    for (let i in brands) {
+function createBrandBanners(brands) 
+{
+    for (let i in brands) 
+    {
         let categoryDiv = document.createElement("div");
         categoryDiv.classList.add("row");
         categoryDiv.classList.add("justify-content-center");
@@ -20,8 +22,8 @@ function createBrandBanners(brands) {
     }
 }
 
-function isInViewport(element) {
-
+function isInViewport(element) 
+{
     const rect = element.getBoundingClientRect();
     return (
         rect.top >= 0 &&
@@ -31,41 +33,46 @@ function isInViewport(element) {
     );
 }
 
-function brandsAnimate(brandsDiv) {
-
+function brandsAnimate(brandsDiv) 
+{
     let visibleCount = 0;
-    for (let i = 0; i < brandsDiv.length; i++) {
-        
-        if(isInViewport(brandsDiv[i]) && brandsDiv[i].style.visibility == "hidden"){
-            
+    for (let i = 0; i < brandsDiv.length; i++) 
+    {    
+        if(isInViewport(brandsDiv[i]) && brandsDiv[i].style.visibility == "hidden")
+        {    
             brandsDiv[i].style.visibility = "visible";
             brandsDiv[i].classList.add("animate__animated");
 
-            if(i%2==0){
+            if(i%2==0)
+            {
                 brandsDiv[i].classList.add("animate__slideInLeft")
             }
-            else{
+            else
+            {
                 brandsDiv[i].classList.add("animate__slideInRight");
             }
         }
 
-        if(brandsDiv[i].style.visibility == "visible"){
+        if(brandsDiv[i].style.visibility == "visible")
+        {
             visibleCount++;
         }
     }
 
-    if(visibleCount == brandsDiv.length){
+    if(visibleCount == brandsDiv.length)
+    {
         document.removeEventListener("scroll", brandsAnimate);
     }
 }
 
-window.addEventListener("load", function () { 
-
+window.addEventListener("load", function () 
+{ 
     createBrandBanners(brands); 
 
     this.brandsDiv = document.querySelectorAll("#brandsDiv > .row");
 
-    for (let i = 0; i < brandsDiv.length; i++) {
+    for (let i = 0; i < brandsDiv.length; i++) 
+    {
         brandsDiv[i].style.visibility = "hidden";
     }
 

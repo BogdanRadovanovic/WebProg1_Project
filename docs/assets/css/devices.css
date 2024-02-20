@@ -1,0 +1,40 @@
+/*MAIN*/
+main{
+    background-color: #408fc7;
+    border-radius: 8px;
+}
+
+main .card{
+    border:5px solid #0761a0;
+    border-radius: 8px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+main .card-title {
+    border:5px solid #0761a0;
+    border-radius: 8px;
+    background-color: #408fc7;
+    color: #074571;
+}
+
+#filters{
+    border:5px solid #0761a0;
+    border-radius: 8px;
+}
+
+#filters div{
+    width: min-content;
+}
+
+#filters select{
+    width: min-content;
+    background-color: #408fc7;
+    border-color: #074571;
+    font-style: italic;
+}
+
+#filters select, #filters label{
+    color: #074571;
+    font-weight: bold;
+}

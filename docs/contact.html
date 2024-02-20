@@ -9,9 +9,8 @@
     <title>Cosmobile</title>
     
     <link rel="stylesheet" type="text/css" href="assets/frameworks/bootstrap-5.3.2-dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
 </head>
 <body>
   <div class="container"> 
@@ -78,35 +77,71 @@
 
     </header>
 
-    <main>
+    <main class="container-fluid my-3 py-5 px-4">
 
-      <!-- SLIDER -->
+      <h2>Contact us!</h2>
+      <p>Feel free to ask us or suggest anything. We will appreciate it! :)</p>
+
+      <form id="form1" action="#" method="GET" name="form1" class="needs-validation" novalidate> 
+
+        <div class="row mb-3">
+          <div class="col-sm-4"> 
+            <label for="tbEmail" class="form-label text-danger errorLabel"> * </label>
+            <label for="tbEmail" class="form-label">Email address:</label>  
+            <input type="email" id="tbEmail" name="tbEmail" class="form-control inputElement" required/> 
+          </div> 
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-sm-4"> 
+            <label for="tbName" class="form-label text-danger errorLabel"> * </label> 
+            <label for="tbName" class="form-label">Full name: </label> 
+            <input type="text" id="tbName" name="tbName" class="form-control inputElement" required/> 
+          </div> 
+        </div>
+          
+        <div class="row mb-3">
+          <div class="col-sm-4"> 
+            <label for="tbNumber" class="form-label text-danger errorLabel"> * </label> 
+            <label for="tbNumber" class="form-label">Phone number:</label> 
+            <input type="text" id="tbNumber" name="tbNumber" class="form-control inputElement"/> 
+          </div> 
+        </div> 
+
+        <div class="row mb-3">
+          <div class="col-sm-4" id="ageList"></div>
+        </div> 
+        
+        <div class="row mb-3">
+          <div class="col-sm-5 form-check ms-3"> 
+            <input type="checkbox" name="chbNotifications" id="chbNotifications" value="Yes" class="form-check-input inputElement"/>
+            <label for="chbNotifications" class="form-check-label">Check for mail notifications about new devices on our web site.</label>
+          </div>
+        </div>
+        
+        <div id="notificationsFrequency" class="row mb-3">
+          <div class="col-sm-4">
+            <span>How often would you like to be notified?</span><span class="text-danger errorLabel">&nbsp;*</span><br/> 
+            <input type="radio" name="rbNotifications" id="rbNotifications1" value="Daily" class="form-check-input inputElement"/><label for="rbNotifications1" class="form-check-label"> &nbsp; Daily</label><br/> 
+            <input type="radio" name="rbNotifications" id="rbNotifications2" value="Weekly" class="form-check-input inputElement"/><label for="rbNotifications2" class="form-check-label"> &nbsp; Weekly</label><br/> 
+            <input type="radio" name="rbNotifications" id="rbNotifications3" value="Monthly" class="form-check-input inputElement"/><label for="rbNotifications3" class="form-check-label"> &nbsp; Monthly</label><br/> 
+          </div> 
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-sm-4"> 
+            <label for="taNote" class="form-label text-danger errorLabel"> * </label> 
+            <label for="taNote" class="form-label">Place for your message: </label><br/> 
+            <textarea id="taNote" name="taNote" class="form-control inputElement"></textarea> 
+          </div>
+        </div>
+
+        <input type="submit" value="Send" id="btnSend" name="btnSend" class="btn"/> 
+
+      </form>
+
       <div class="row">
-          <div id="mainSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-              <div class="carousel-inner"></div>
-
-              <button id="btnPreviousSlide" class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-
-              <button id="btnNextSlide" class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-
-            </div>
-      </div>
-
-      <!-- BRAND BANNERS -->
-      <div class="row">
-        <div class="container-fluid pt-4" id="brandsDiv"></div>
-      </div>
-
-      <!-- MESSAGE TO VISITOR -->
-      <div class="row p-4 m-2 justify-content-center align-items-center" id="msgToVisitor">
-        <p class="col-md-6 m-0 text-center">Thank you for visiting our site! <br/>For any question or suggestion you can contact us <a href="contact.html">here</a></p>
+        <div id="infoDiv" class="col-sm-5 mt-3 ms-2 px-1 pt-3 pb-2"></div>
       </div>
 
     </main>
@@ -125,7 +160,6 @@
     <script type="text/javascript" src="assets/javascript/libs/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="assets/javascript/data.js"></script>
     <script type="text/javascript" src="assets/javascript/navbar.js"></script>
-    <script type="text/javascript" src="assets/javascript/slider.js"></script>
-    <script type="text/javascript" src="assets/javascript/brandBanners.js"></script>
+    <script type="text/javascript" src="assets/javascript/contact.js"></script>
 </body>
 </html>

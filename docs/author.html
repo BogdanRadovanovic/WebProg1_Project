@@ -9,9 +9,8 @@
     <title>Cosmobile</title>
     
     <link rel="stylesheet" type="text/css" href="assets/frameworks/bootstrap-5.3.2-dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/author.css">
 </head>
 <body>
   <div class="container"> 
@@ -78,37 +77,18 @@
 
     </header>
 
-    <main>
-
-      <!-- SLIDER -->
-      <div class="row">
-          <div id="mainSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-              <div class="carousel-inner"></div>
-
-              <button id="btnPreviousSlide" class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-
-              <button id="btnNextSlide" class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-
-            </div>
-      </div>
-
-      <!-- BRAND BANNERS -->
-      <div class="row">
-        <div class="container-fluid pt-4" id="brandsDiv"></div>
-      </div>
-
-      <!-- MESSAGE TO VISITOR -->
-      <div class="row p-4 m-2 justify-content-center align-items-center" id="msgToVisitor">
-        <p class="col-md-6 m-0 text-center">Thank you for visiting our site! <br/>For any question or suggestion you can contact us <a href="contact.html">here</a></p>
-      </div>
-
+    <main class="container-fluid my-3 p-4">
+        <figure id="author" class="m-0">
+            <img src="assets/images/profile_picture.jpg" alt="profile_picture">
+            <figcaption>
+                &emsp; My name is Bogdan Radovanović, I was born in Jagodina in 1996. 
+                Graduated from gymnasium "Svetozar Marković" (Informatics major), in my hometown 
+                and at this point, I'm attending <a href="https://ict.edu.rs/" target="_blank">ICT College</a> in Belgrade. 
+                I am currently working at <a href="https://www.traceone.com/" target="_blank">TraceOne</a>, as a Software Developer (Backend, .NET). <br/> 
+                Great enthusiast for a mind burst logical problems, on one side of personality and nature addict, on the other. <br/>
+                My life motto is: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </figcaption>
+        </figure>
     </main>
 
     <footer class="row py-3">
@@ -117,7 +97,7 @@
         <li class="nav-item"><a href="#" class="nav-link px-2">Site Map</a></li>
         <li class="nav-item"><a href="author.html" class="nav-link px-2">About author</a></li>
       </ul>
-      <p class="text-center">&copy; 2024, for Web programming course at <a href="https://ict.edu.rs/" target="_blank">ICT College</a>, by Bogdan Radovanović</p>
+      <p class="text-center">&copy; 2024, for Web programming course at <a href="https://ict.edu.rs/" target="_blank">ICT College</a>, by Bogdan Radovanović</a></p>
     </footer>
 
 	</div>
@@ -125,7 +105,5 @@
     <script type="text/javascript" src="assets/javascript/libs/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="assets/javascript/data.js"></script>
     <script type="text/javascript" src="assets/javascript/navbar.js"></script>
-    <script type="text/javascript" src="assets/javascript/slider.js"></script>
-    <script type="text/javascript" src="assets/javascript/brandBanners.js"></script>
 </body>
 </html>

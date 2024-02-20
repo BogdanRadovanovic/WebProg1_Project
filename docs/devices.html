@@ -9,9 +9,9 @@
     <title>Cosmobile</title>
     
     <link rel="stylesheet" type="text/css" href="assets/frameworks/bootstrap-5.3.2-dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/devices.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/lightbox2-master/css/lightbox.css">
 </head>
 <body>
   <div class="container"> 
@@ -78,37 +78,26 @@
 
     </header>
 
-    <main>
+    <main class="container-fluid my-3 py-4">
+      <div id="filters" class="row justify-content-between mx-5 p-2">
 
-      <!-- SLIDER -->
-      <div class="row">
-          <div id="mainSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="nameSort" class="col-6">
+          <label for="ddlSort">Sort by: </label>
+          <select class="form-select" id="ddlSort">
+            <option value="0">-- select criteria --</option>
+            <option value="name_asc">Name -> Ascending</option>
+            <option value="name_desc">Name <- Descending</option>
+          </select>
+        </div>
 
-              <div class="carousel-inner"></div>
+        <div id="brandFilter" class="col-6">
+          <label for="ddlFilter">Choose brand: </label>
+          <select class="form-select" id="ddlFilter">
+            <option value="0" selected>All brands</option>
+          </select>
+        </div>
 
-              <button id="btnPreviousSlide" class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-
-              <button id="btnNextSlide" class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-
-            </div>
       </div>
-
-      <!-- BRAND BANNERS -->
-      <div class="row">
-        <div class="container-fluid pt-4" id="brandsDiv"></div>
-      </div>
-
-      <!-- MESSAGE TO VISITOR -->
-      <div class="row p-4 m-2 justify-content-center align-items-center" id="msgToVisitor">
-        <p class="col-md-6 m-0 text-center">Thank you for visiting our site! <br/>For any question or suggestion you can contact us <a href="contact.html">here</a></p>
-      </div>
-
     </main>
 
     <footer class="row py-3">
@@ -125,7 +114,7 @@
     <script type="text/javascript" src="assets/javascript/libs/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="assets/javascript/data.js"></script>
     <script type="text/javascript" src="assets/javascript/navbar.js"></script>
-    <script type="text/javascript" src="assets/javascript/slider.js"></script>
-    <script type="text/javascript" src="assets/javascript/brandBanners.js"></script>
+    <script type="text/javascript" src="assets/javascript/devices.js"></script>
+    <script type="text/javascript" src="assets/plugins/lightbox2-master/js/lightbox.js"></script>
 </body>
 </html>

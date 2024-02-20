@@ -1,0 +1,23 @@
+main {
+    background-color: #408fc7;
+    border-radius: 8px; 
+}
+
+main span, main label, main p, main h2, #ddlAge, #ddlAge>option, #infoDiv>ul>li {
+    color: #074571; 
+} 
+
+#btnSend {
+	background-color: #074571; 
+	color: #408fc7;
+	font-weight: bold;
+}
+
+#infoDiv, #notificationsFrequency, .errorLabel {
+	display: none;
+}
+
+#infoDiv {
+	border:5px solid #074571;
+    border-radius: 8px; 
+}

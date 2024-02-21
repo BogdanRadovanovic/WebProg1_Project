@@ -2,7 +2,7 @@ function setActiveLink()
 {
     let urlParts = document.URL.split("/");
     let currentPage = urlParts[urlParts.length - 1].split("#")[0];
-    let resourcePages = ["#", "#", "author.html"];
+    let resourcePages = ["Documentation.pdf", "sitemap.xml", "author.html"];
 
     let menuItems = document.querySelectorAll("#navbarNavDropdown > ul > li > a");
     for (let i = 0; i < menuItems.length; i++) 
